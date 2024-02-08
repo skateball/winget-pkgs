@@ -1,0 +1,26 @@
+PackageIdentifier: SAP.SapMachine.21.JDK
+PackageVersion: 21.0.2
+DefaultLocale: en-US
+Publisher: SAP
+PublisherUrl: https://sap.com
+PublisherSupportUrl: https://github.com/SAP/SapMachine/issues
+PrivacyUrl: https://www.sap.com/about/legal/privacy.html
+Author: SAP SapMachine
+PackageName: SapMachine JDK 21
+PackageUrl: https://github.com/SAP/SapMachine/releases/tag/sapmachine-21.0.2
+License: GPL 2 with Classpath Exception
+LicenseUrl: https://github.com/SAP/SapMachine/blob/sapmachine/LICENSE
+# Copyright:
+# CopyrightUrl:
+ShortDescription: SapMachine is a build of the OpenJDK, maintained and supported by SAP.
+Description: SapMachine is a build of the OpenJDK, maintained and supported by SAP. It provides a free and open-source implementation of the Java Platform, Standard Edition (Java SE).
+Tags:
+- hotspot
+- java
+- javafx
+- sapmachine
+- sap
+- openjdk
+ReleaseNotesUrl: https://github.com/SAP/SapMachine/releases/tag/sapmachine-21.0.2
+ManifestType: defaultLocale
+ManifestVersion: 1.1.0
