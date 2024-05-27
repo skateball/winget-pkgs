@@ -6,11 +6,11 @@ Commands: []
 InstallerType: zip
 Installers:
   - Architecture: arm64
-    InstallerUrl: 'https://vscode.download.prss.microsoft.com/dbazure/download/insider/f209ce35ef894bd32c12057724e8d1f1139c433f/vscode_cli_win32_arm64_cli.zip'
-    InstallerSha256: 7e06800228ea59ebb5173b85ac0f0de02647250a379e258e6bd40d3ce17f2120
+    InstallerUrl: 'https://vscode.download.prss.microsoft.com/dbazure/download/insider/fd11ed87fdf1f8e46575e027644406f51f0666f6/vscode_cli_win32_arm64_cli.zip'
+    InstallerSha256: 3bd22988409f3d2c6dac9c92c2fd536bb1b93e5e87937bf6afc7629c21a17f2e
   - Architecture: x64
-    InstallerUrl: 'https://vscode.download.prss.microsoft.com/dbazure/download/insider/f209ce35ef894bd32c12057724e8d1f1139c433f/vscode_cli_win32_x64_cli.zip'
-    InstallerSha256: 4c3d28c0e51f346689903e6034212bc1c97ed8feb42525636a7320255f65561e
+    InstallerUrl: 'https://vscode.download.prss.microsoft.com/dbazure/download/insider/fd11ed87fdf1f8e46575e027644406f51f0666f6/vscode_cli_win32_x64_cli.zip'
+    InstallerSha256: 9d495d1494d64dde05a953a59945e82741dcb3ffdc7eea850e13c8137908dc93
 ManifestType: installer
 ManifestVersion: 1.5.0
 NestedInstallerType: portable
