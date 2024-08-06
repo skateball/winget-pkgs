@@ -146,11 +146,11 @@ FileExtensions:
 - yaml
 - yml
 - zsh
-ReleaseDate: 2024-07-25
+ReleaseDate: 2024-07-29
 Installers:
 - Architecture: x64
-  InstallerUrl: https://github.com/posit-dev/positron/releases/download/2024.07.0-97/Positron-2024.07.0-97-Setup.exe
-  InstallerSha256: 8884E29363E0AA640B8F74E88800440595E4364D2AD29D2E1238CF7B126BA22A
+  InstallerUrl: https://github.com/posit-dev/positron/releases/download/2024.07.0-107/Positron-2024.07.0-107-Setup.exe
+  InstallerSha256: B3626533AAAE59DD7729D0425FBA01F3243366B4567D3E3AC406FCFA21F5E95B
   ProductCode: '{08FC0438-DEF4-4349-85AE-FA80317766E9}_is1'
 ManifestType: installer
 ManifestVersion: 1.6.0
