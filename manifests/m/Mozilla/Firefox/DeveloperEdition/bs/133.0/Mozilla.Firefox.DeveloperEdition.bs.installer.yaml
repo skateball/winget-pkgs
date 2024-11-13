@@ -24,19 +24,19 @@ FileExtensions:
 - webp
 - xht
 - xhtml
-ReleaseDate: 2024-10-29
+ReleaseDate: 2024-11-11
 Installers:
 - Architecture: x86
-  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/devedition/releases/133.0b1/win32/bs/Firefox%20Setup%20133.0b1.exe
-  InstallerSha256: B94027F0F31056A7FEBA0FA298CC2D2762E7B1CE501163FBAD3FE3C774D8DB7B
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/devedition/releases/133.0b7/win32/bs/Firefox%20Setup%20133.0b7.exe
+  InstallerSha256: BB040C2BAA1836F4A809662D10A23AEB92880CBDBBFB257CD0C5727819F8B9A4
   ProductCode: Firefox Developer Edition 133.0 (x86 bs)
 - Architecture: x64
-  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/devedition/releases/133.0b1/win64/bs/Firefox%20Setup%20133.0b1.exe
-  InstallerSha256: 746183FCA16918F7FD03E4BD4798A6738392B55ADF62A69C888A3AAB3EC2FC2B
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/devedition/releases/133.0b7/win64/bs/Firefox%20Setup%20133.0b7.exe
+  InstallerSha256: 74C6C977285DD273E0AEF201B358B3D66445ECF5590FB6ED31D01B9166A765C5
   ProductCode: Firefox Developer Edition 133.0 (x64 bs)
 - Architecture: arm64
-  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/devedition/releases/133.0b1/win64-aarch64/bs/Firefox%20Setup%20133.0b1.exe
-  InstallerSha256: 4BC975B6A0261087CC713EF5F535180E9B63CFC5927A799468010DB99587CBB4
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/devedition/releases/133.0b7/win64-aarch64/bs/Firefox%20Setup%20133.0b7.exe
+  InstallerSha256: 33F7B0D5666349AD6090F175027BC77B127330DE0BEA250F4BE06BAEBBA4FD95
   ProductCode: Firefox Developer Edition 133.0 (arm64 bs)
 ManifestType: installer
 ManifestVersion: 1.6.0
