@@ -1,0 +1,15 @@
+# Automatically updated by the winget bot at 2025/Jan/26
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.9.0.schema.json
+
+PackageIdentifier: JurgenRathlev.InnoUnpacker
+PackageVersion: 2.0.2.0
+InstallerType: inno
+Scope: machine
+UpgradeBehavior: install
+ProductCode: InnoUnpacker_is1
+Installers:
+- Architecture: x86
+  InstallerUrl: https://www.rathlev-home.de/tools/download/innounpacker-setup.exe
+  InstallerSha256: F03056EE71DB8F62E751F89BA3B0F0A6ABDCC1A1E665A81FCA284B44AA4614A8
+ManifestType: installer
+ManifestVersion: 1.9.0
