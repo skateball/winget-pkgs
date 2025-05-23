@@ -1,0 +1,57 @@
+# Created with komac v2.12.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
+
+PackageIdentifier: Zen-Team.Zen-Browser.Twilight
+PackageVersion: 1.13t
+PackageLocale: en-US
+Publisher: Zen OSS Team
+PublisherUrl: https://zen-browser.app/
+PublisherSupportUrl: https://github.com/zen-browser/desktop/issues
+PrivacyUrl: https://zen-browser.app/privacy-policy/
+PackageName: Zen Browser - Twilight
+PackageUrl: https://zen-browser.app/
+License: MPL-2.0
+LicenseUrl: https://github.com/zen-browser/desktop/blob/HEAD/LICENSE
+Copyright: Zen OSS Team
+ShortDescription: Zen is the best way to browse the web. Beautifully designed, privacy-focused, and packed with features. We care about your experience, not your data.
+Moniker: zen-browser-twilight
+Tags:
+- arc
+- arc-browser
+- browser
+- firefox
+- firefox-based
+- firefox-browser
+- internet
+- web
+- web-browser
+- webpage
+- zen
+ReleaseNotes: |-
+  Zen Twilight Release
+  File Checksums (SHA-256)
+  44f0104b9324bebcb900ffa561cf8a3491c2d22aba91999df749da5b712446c7  zen.source.tar.zst
+  ff36928054e0b69cfe7b95c62fc14ca56264f7c7d610d4e7963ce868a2508888  zen.linux-x86_64.tar.xz
+  24ee57eff698bdd309206239e2cac60bceeb6108ee33ffff8bd7e499825a025b  zen.linux-aarch64.tar.xz
+  3f7326163e38f0f2a65909643d11cdea57ca0c712e0e337f2290c8ad9c5939d2  zen-x86_64.AppImage
+  7c91518529314b38e2db0181d7118f6c911e849161a7a1102d086c367453963c  zen-x86_64.AppImage.zsync
+  4318f9cbdda5a2b163eda8bb0d9830ad24c2acc03d83c3c254b7278fea1e50b3  zen-aarch64.AppImage
+  5882e8ba0bb55a8e567776a2fd12a2251bd5f1dc33092f928c9f643a1e7fe1c8  zen-aarch64.AppImage.zsync
+  ee72015b862cce713d103c42f618057aa08164bf8e9ecb8163fe551e2ab01e8d  zen.win-x86_64.zip
+  805bbc689ee58046c912e4a0c2f63c9c2b828bf9407a5e2a9d281bb338067d8a  zen.win-arm64.zip
+  053f03b18593a27f3226e40d1a7dcf78a24aa4cca14a899d4ff7a755c6697e41  linux.mar
+  6000357a5e2254a8b8e33c5abb3a4ff688da4e59728440e08fba398cb67c2cc2  linux-aarch64.mar
+  6cbeb300e59ed5ca5a0f3e438de980301da85e0d3e629d6090fa2aced4cae62a  windows.mar
+  ab8851b60c8c5f2338f588af93316647136aca74b2c31a97775d37dd82c26f1e  windows-arm64.mar
+  d0bb0d10c497baf39aecbec40fd7051f2b45472c59c50d36d7bc6751bc236097  macos.mar
+  34062e854e540547241b578deda544ccc2052f32dd7aee0a1508c70ddd4a5494  zen.installer.exe
+  a62abacd8c035b52a395083d93b0ebcf74be43140da886128562ee78360888c7  zen.installer-arm64.exe
+  9a55e8c35f2de3de31d47a19cb1c87e8235ce3d2652e6a6f3b099e56da7e1112  zen.macos-universal.dmg
+ReleaseNotesUrl: https://github.com/zen-browser/desktop/releases/tag/twilight
+Documentations:
+- DocumentLabel: About
+  DocumentUrl: https://zen-browser.app/about/
+- DocumentLabel: Documentation
+  DocumentUrl: https://docs.zen-browser.app/
+ManifestType: defaultLocale
+ManifestVersion: 1.10.0
