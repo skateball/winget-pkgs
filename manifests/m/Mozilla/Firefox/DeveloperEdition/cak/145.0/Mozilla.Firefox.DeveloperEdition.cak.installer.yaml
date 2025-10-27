@@ -1,0 +1,42 @@
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: Mozilla.Firefox.DeveloperEdition.cak
+PackageVersion: "145.0"
+InstallerType: nullsoft
+Scope: machine
+InstallerSwitches:
+  Silent: /S /PreventRebootRequired=true
+  SilentWithProgress: /S /PreventRebootRequired=true
+  InstallLocation: /InstallDirectoryPath="<INSTALLPATH>"
+UpgradeBehavior: install
+Protocols:
+- http
+- https
+- mailto
+FileExtensions:
+- avif
+- htm
+- html
+- pdf
+- shtml
+- svg
+- webp
+- xht
+- xhtml
+ReleaseDate: 2025-10-24
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/devedition/releases/145.0b6/win32/cak/Firefox%20Setup%20145.0b6.exe
+  InstallerSha256: 06E83FD78BBF88752CE00FF454CF36FB720D2B0A55CB9C9CF74F2A39DB3E20D3
+  ProductCode: Firefox Developer Edition 145.0 (x86 cak)
+- Architecture: x64
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/devedition/releases/145.0b6/win64/cak/Firefox%20Setup%20145.0b6.exe
+  InstallerSha256: DAFE5D7DE99F58CDAB4F56AE4D0CF2E3B660D194190BBCAC9E1272BF394DA05F
+  ProductCode: Firefox Developer Edition 145.0 (x64 cak)
+- Architecture: arm64
+  InstallerUrl: https://download-installer.cdn.mozilla.net/pub/devedition/releases/145.0b6/win64-aarch64/cak/Firefox%20Setup%20145.0b6.exe
+  InstallerSha256: 876F9E7530CA8D1A5F7655DF91C4067832633D12FA3A57C91F0234B34C01E128
+  ProductCode: Firefox Developer Edition 145.0 (arm64 cak)
+ManifestType: installer
+ManifestVersion: 1.10.0
