@@ -9,14 +9,14 @@ ProductCode: ktuberling
 Installers:
 - Architecture: x64
   Scope: user
-  InstallerUrl: https://cdn.kde.org/ci-builds/games/ktuberling/master/windows/ktuberling-master-826-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: FFD9112DFE6576B7ADFF546989FC9938AE6C671BBD44B82134022D1DC267BE7D
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/ktuberling/master/windows/ktuberling-master-857-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 79397268ECE81E4A8AE837D4D67BE2E4AF4B1BB846E17945D37FF1AF5A7C0A99
   InstallerSwitches:
     Custom: /CurrentUser
 - Architecture: x64
   Scope: machine
-  InstallerUrl: https://cdn.kde.org/ci-builds/games/ktuberling/master/windows/ktuberling-master-826-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: FFD9112DFE6576B7ADFF546989FC9938AE6C671BBD44B82134022D1DC267BE7D
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/ktuberling/master/windows/ktuberling-master-857-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 79397268ECE81E4A8AE837D4D67BE2E4AF4B1BB846E17945D37FF1AF5A7C0A99
   InstallerSwitches:
     Custom: /AllUsers
 ManifestType: installer
