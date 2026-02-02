@@ -1,5 +1,5 @@
 # Created with YamlCreate.ps1 Dumplings Mod
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
 
 PackageIdentifier: KDE.LSkat
 PackageVersion: master
@@ -9,15 +9,15 @@ ProductCode: lskat
 Installers:
 - Architecture: x64
   Scope: user
-  InstallerUrl: https://cdn.kde.org/ci-builds/games/lskat/master/windows/lskat-master-817-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: D545A357824EB3CF584E7A5FE72D2E67D9D278A143B935EB8FCE54196716FAB5
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/lskat/master/windows/lskat-master-845-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 1BA102D71596903A91B0249BE6DF0A06F14CDB69F97E1A14998F726735217104
   InstallerSwitches:
     Custom: /CurrentUser
 - Architecture: x64
   Scope: machine
-  InstallerUrl: https://cdn.kde.org/ci-builds/games/lskat/master/windows/lskat-master-817-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: D545A357824EB3CF584E7A5FE72D2E67D9D278A143B935EB8FCE54196716FAB5
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/lskat/master/windows/lskat-master-845-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 1BA102D71596903A91B0249BE6DF0A06F14CDB69F97E1A14998F726735217104
   InstallerSwitches:
     Custom: /AllUsers
 ManifestType: installer
-ManifestVersion: 1.10.0
+ManifestVersion: 1.12.0
