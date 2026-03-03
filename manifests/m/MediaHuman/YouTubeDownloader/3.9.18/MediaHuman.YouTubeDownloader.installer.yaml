@@ -9,12 +9,13 @@ UpgradeBehavior: install
 Protocols:
 - ytd
 ProductCode: MediaHuman YouTube Downloader_is1
+ReleaseDate: 2025-12-01
 Installers:
 - Architecture: x86
   InstallerUrl: https://www.mediahuman.com/files/YouTubeDownloader.exe
-  InstallerSha256: 41A10EC957B538EAE647B99EB27D48726B6E33698F9D82D16D7029B02ACC18CB
+  InstallerSha256: DD82B410135ADE5F0F0D02B7DCD0CADC551193A617F14922595296E0A0B0707E
 - Architecture: x64
   InstallerUrl: https://www.mediahuman.com/files/YouTubeDownloader-x64.exe
-  InstallerSha256: C05AB1B39FF642C08714B6DA0BCE6ECB7942AD19AB1ABEE64015684B5938D91C
+  InstallerSha256: 3C4F3469A488A5AB9EACF6F05BC32137CA66756FABD99A6A56186D34C39AC686
 ManifestType: installer
 ManifestVersion: 1.12.0
