@@ -6,17 +6,18 @@ PackageVersion: master
 InstallerType: nullsoft
 UpgradeBehavior: install
 ProductCode: kshisen
+ReleaseDate: 2026-10-19
 Installers:
 - Architecture: x64
   Scope: user
-  InstallerUrl: https://cdn.kde.org/ci-builds/games/kshisen/master/windows/kshisen-master-846-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: 2BDDB3A285DD0777B50DC656256EFFE8563ADA913F1CB5CBBAC3AE66221A2E46
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/kshisen/master/windows/kshisen-master-966-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: B53C5486E827CDA0A9999E0687A68B7067F4715A6C78C00037797D7DB3F16B40
   InstallerSwitches:
     Custom: /CurrentUser
 - Architecture: x64
   Scope: machine
-  InstallerUrl: https://cdn.kde.org/ci-builds/games/kshisen/master/windows/kshisen-master-846-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: 2BDDB3A285DD0777B50DC656256EFFE8563ADA913F1CB5CBBAC3AE66221A2E46
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/kshisen/master/windows/kshisen-master-966-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: B53C5486E827CDA0A9999E0687A68B7067F4715A6C78C00037797D7DB3F16B40
   InstallerSwitches:
     Custom: /AllUsers
 ManifestType: installer

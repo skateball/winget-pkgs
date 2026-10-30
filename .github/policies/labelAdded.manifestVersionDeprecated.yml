@@ -30,13 +30,15 @@ configuration:
                 For details on the specific error, see the details link below in the build pipeline.
 
 
-                Template: msftbot/validationError/manifest/version/deprecated
+                ###### Template: msftbot/validationError/manifest/version/deprecated
           - assignTo:
               author: True
           - addLabel:
               label: Needs-Author-Feedback
           - removeLabel:
               label: Needs-Attention
+          - addLabel:
+              label: Validation-Guide
         # The policy service should trigger even when the label was added by the policy service
         triggerOnOwnActions: true
 onFailure:

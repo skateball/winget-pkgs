@@ -1,4 +1,4 @@
-# Created with YamlCreate.ps1 Dumplings Mod
+# Automatically updated by the winget bot at 2026/May/06
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.locale.1.12.0.schema.json
 
 PackageIdentifier: MiniZinc.MiniZincIDE
@@ -16,8 +16,7 @@ Tags:
 - 编程语言
 - 语言
 - 集成开发环境
-ReleaseNotes: https://docs.minizinc.dev/zh-cn/2.9.5/changelog.html
-ReleaseNotesUrl: https://github.com/MiniZinc/MiniZincIDE/releases/tag/2.9.5
+ReleaseNotesUrl: https://docs.minizinc.dev/zh-cn/2.9.5/changelog.html
 Documentations:
 - DocumentLabel: 手册
   DocumentUrl: https://docs.minizinc.dev/zh-cn/stable/

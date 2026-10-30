@@ -6,17 +6,18 @@ PackageVersion: master
 InstallerType: nullsoft
 UpgradeBehavior: install
 ProductCode: kiriki
+ReleaseDate: 2026-10-19
 Installers:
 - Architecture: x64
   Scope: user
-  InstallerUrl: https://cdn.kde.org/ci-builds/games/kiriki/master/windows/kiriki-master-760-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: C836C8EE4A10F72F4EFB1CBE13E6BC71F8DC10262F3754BC94D5D83C2A0A0EAC
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/kiriki/master/windows/kiriki-master-886-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 1BBEB7610852E0993AB73A39AD55BB4B0B5AF2BD7661B1430FBE0069D06B1B5D
   InstallerSwitches:
     Custom: /CurrentUser
 - Architecture: x64
   Scope: machine
-  InstallerUrl: https://cdn.kde.org/ci-builds/games/kiriki/master/windows/kiriki-master-760-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: C836C8EE4A10F72F4EFB1CBE13E6BC71F8DC10262F3754BC94D5D83C2A0A0EAC
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/kiriki/master/windows/kiriki-master-886-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 1BBEB7610852E0993AB73A39AD55BB4B0B5AF2BD7661B1430FBE0069D06B1B5D
   InstallerSwitches:
     Custom: /AllUsers
 ManifestType: installer

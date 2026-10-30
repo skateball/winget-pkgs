@@ -31,7 +31,7 @@ configuration:
                 This pull request does not update any files. Please review your commit history and resubmit.
 
 
-                Template: msftbot/validationError/pullRequest/noContent
+                ###### Template: msftbot/validationError/pullRequest/noContent
           - closePullRequest
       - description: Add CodeFlow link and Pipeline Status to new PRs
         if:
@@ -45,11 +45,33 @@ configuration:
                 [![Validation Pipeline Badge](https://img.shields.io/endpoint?url=https://winget-validation-pme-f8gqfjhzacawbecy.z01.azurefd.net/api/GetServiceComponentStatusBadge?component=ValidationPipeline "Validation Pipeline Badge")](https://dev.azure.com/shine-oss/winget-pkgs/_build?definitionId=14)&nbsp;[![Publish Pipeline Badge](https://img.shields.io/endpoint?url=https://winget-validation-pme-f8gqfjhzacawbecy.z01.azurefd.net/api/GetServiceComponentStatusBadge?component=PublishPipeline "Publish Pipeline Badge")](https://dev.azure.com/shine-oss/winget-pkgs/_build?definitionId=12)
           # If the user is a first-time contributor, add the Needs-CLA Label
           - if:
-              - activitySenderHasAssociation:
-                  association: FIRST_TIME_CONTRIBUTOR
+              - or:
+                - activitySenderHasAssociation:
+                    association: NONE
+                - activitySenderHasAssociation:
+                    association: FIRST_TIMER
+                - activitySenderHasAssociation:
+                    association: FIRST_TIME_CONTRIBUTOR
             then:
               - addLabel:
                   label: Needs-CLA
+      - description: Add Copilot-Instructions label to PRs modifying Copilot instruction files
+        if:
+          - payloadType: Pull_Request
+          - or:
+              - isAction:
+                  action: Opened
+              - isAction:
+                  action: Synchronize
+          - filesMatchPattern:
+              pattern: ^\.github/(copilot-instructions\.md|instructions/.+\.instructions\.md)$
+              matchAny: true
+          - not:
+              hasLabel:
+                label: Copilot-Instructions
+        then:
+          - addLabel:
+              label: Copilot-Instructions
       - description: Add Needs-Triage to new issues
         if:
           - payloadType: Issues
@@ -84,11 +106,13 @@ configuration:
                 Sorry we cannot process ${number} because you are changing validation-pipeline.yaml. Please remove that file from your PR. If you would like to discuss changes to validation-pipeline.yml, please file an issue.
 
 
-                Template: msftbot/pipelineModified
+                ###### Template: msftbot/pipelineModified
           - assignTo:
               author: True
           - addLabel:
               label: Needs-Author-Feedback
+          - addLabel:
+              label: Validation-Guide
       - description: >-
           When a pull request is opened, if the files are Yaml files, are not in the Manifests folder, and are not in DevOpsPipelineDefinitions
           * Add a message to the author
@@ -129,13 +153,15 @@ configuration:
                 Please review the path of your manifest file and resubmit.
 
 
-                Template: msftbot/validationError/manifest/missingManifestsFolder
+                ###### Template: msftbot/validationError/manifest/missingManifestsFolder
           - assignTo:
               author: True
           - addLabel:
               label: Needs-Author-Feedback
           - addLabel:
               label: Manifest-Path-Error
+          - addLabel:
+              label: Validation-Guide
       - description: >-
           When an issue is opened, if the content contains "Hash Mismatch" or "Hash does not match" (case insensitive)
           * Add the Package-Update label
@@ -209,12 +235,16 @@ configuration:
                 pattern: ^$
           - filesMatchPattern:
                 pattern: ^.*\.validation
-          - not:
-              activitySenderHasPermission:
-                permission: Admin
-          - not:
-              isActivitySender:
-                user: wingetbot
+          - and:
+            - not:
+                activitySenderHasPermission:
+                  permission: Admin
+            - not:
+                isActivitySender:
+                  user: wingetbot
+            - not:
+                isActivitySender:
+                  user: wingetvalidator-prod[bot]
         then:
           - addLabel:
               label: Author-Not-Authorized
@@ -254,7 +284,7 @@ configuration:
                 It appears you are making a change under the 'fonts' directory. The community repository currently does not accept contributions to the fonts directory.
 
 
-                Template: msftbot/authorNotAuthorized/fonts
+                ###### Template: msftbot/authorNotAuthorized/fonts
           - addLabel:
               label: Author-Not-Authorized
 onFailure:

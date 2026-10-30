@@ -34,7 +34,7 @@ configuration:
                 Please check the HASH and submit again. Sorry for the inconvenience.
 
 
-                Template: msftbot/validationError/installers/hashMismatch
+                ###### Template: msftbot/validationError/installers/hashMismatch
           - removeLabel:
               label: Azure-Pipeline-Passed
           - assignTo:
@@ -43,6 +43,8 @@ configuration:
               label: Needs-Attention
           - addLabel:
               label: Needs-Author-Feedback
+          - addLabel:
+              label: Validation-Guide
         # The policy service should trigger even when the label was added by the policy service
         triggerOnOwnActions: true
 onFailure:

@@ -37,11 +37,13 @@ configuration:
                 You may also try the [Windows Package Manager Manifest Creator](https://github.com/microsoft/winget-create)
 
 
-                Template: msftbot/validationError/pullRequest
+                ###### Template: msftbot/validationError/pullRequest
           - assignTo:
               author: True
           - addLabel:
               label: Needs-Author-Feedback
+          - addLabel:
+              label: Validation-Guide
         # The policy service should trigger even when the label was added by the policy service
         triggerOnOwnActions: true
 onFailure:

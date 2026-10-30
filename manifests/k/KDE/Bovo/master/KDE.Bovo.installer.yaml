@@ -6,17 +6,18 @@ PackageVersion: master
 InstallerType: nullsoft
 UpgradeBehavior: install
 ProductCode: bovo
+ReleaseDate: 2026-10-19
 Installers:
 - Architecture: x64
   Scope: user
-  InstallerUrl: https://cdn.kde.org/ci-builds/games/bovo/master/windows/bovo-master-790-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: 842BD0722F4F63C9C5BB4B4D63C8123BB3AD30B81E48AC84F43BA2A276F13C58
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/bovo/master/windows/bovo-master-909-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 89387383AFFF98BCA0B73BAE213EA48039FEEF065EE5F1AA49452877E55208BD
   InstallerSwitches:
     Custom: /CurrentUser
 - Architecture: x64
   Scope: machine
-  InstallerUrl: https://cdn.kde.org/ci-builds/games/bovo/master/windows/bovo-master-790-windows-cl-msvc2022-x86_64.exe
-  InstallerSha256: 842BD0722F4F63C9C5BB4B4D63C8123BB3AD30B81E48AC84F43BA2A276F13C58
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/bovo/master/windows/bovo-master-909-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 89387383AFFF98BCA0B73BAE213EA48039FEEF065EE5F1AA49452877E55208BD
   InstallerSwitches:
     Custom: /AllUsers
 ManifestType: installer

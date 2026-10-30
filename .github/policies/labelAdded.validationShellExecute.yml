@@ -30,13 +30,15 @@ configuration:
                 The application included in this pull request failed to install during dynamic validation. This test is designed to ensure that the application installs on all environments without warnings. Please, verify that the application installs correctly on architectures specified in the manifest using winget cli.
 
 
-                Template: msftbot/validationError/installers/shellExecute
+                ###### Template: msftbot/validationError/installers/shellExecute
           - assignTo:
               author: True
           - addLabel:
               label: Needs-Author-Feedback
           - removeLabel:
               label: Needs-Attention
+          - addLabel:
+              label: Validation-Guide
         # The policy service should trigger even when the label was added by the policy service
         triggerOnOwnActions: true
 onFailure:
